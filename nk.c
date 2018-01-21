@@ -1,17 +1,21 @@
 #include<stdio.h>
-void main() 
+int main() 
 {
-int i,n,k;
+int i,n,k,j;
 int b=0;
-int a[10];
-scanf("%d %d",&n,&k);
+scanf("%d",&n);
+scanf("%d",&k);
 for(i=1;i<=n;i++)
 {
-scanf("%d",&a[i]);
+printf("%d",i);
 }
-for(i=1;i<=k;i++)
+for(j=1;j<=k;j++)
 {
-b=+a[i];
+b+=j;
 }
-printf("%d",b);
+printf("\n%d",b);
+return 0;
 }
+
+
+
